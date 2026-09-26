@@ -4,7 +4,7 @@
   "sources": {
     "udb": {
       "repo": "riscv/riscv-unified-db",
-      "commit": "ef208d765a4061d7e172ad412c8e1036d2e5ce22",
+      "commit": "50fe9a9e9708b4f1cdb287e3e04c75406a016c4e",
       "branch": "main",
       "path": "spec/std/isa/ext"
     },
@@ -571,10 +571,10 @@
       "requires": [],
       "params": [
         {
-          "name": "TRAP_ON_UNIMPLEMENTED_INSTRUCTION",
+          "name": "TRAP_ON_RESERVED_INSTRUCTION",
           "kind": "equal",
           "value": true,
-          "reason": "Ssstrict requires unimplemented opcodes to trap",
+          "reason": "Ssstrict requires unimplemented opcodes in the standard or reserved encoding spaces to trap",
           "src": "udb",
           "ref": "Ssstrict.yaml requirements … param"
         },
